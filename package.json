@@ -19,6 +19,11 @@
             "name": "Lukas Wass",
             "email": "dev@lukaswass.se",
             "url": "https://github.com/LukasWass"
+        },
+        {
+            "name": "Albin Axtelius",
+            "email": "albin@axtelius.se",
+            "url": "https://axtelius.se"
         }
     ],
     "license": "MIT",
