@@ -1,0 +1,32 @@
+{
+    "name": "blueprint-npmjs",
+    "version": "1.0.0",
+    "description": "Blueprint for npmjs package",
+    "main": "./lib/index.js",
+    "types": "./lib",
+    "scripts": {
+        "build": "tsc",
+        "test": "npm run build && echo \"Error: no test specified\" && exit 1",
+        "publish": "npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LukasWass/blueprint-npmjs.git"
+    },
+    "keywords": [],
+    "authors": [
+        {
+            "name": "Lukas Wass",
+            "email": "dev@lukaswass.se",
+            "url": "https://github.com/LukasWass"
+        }
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LukasWass/blueprint-npmjs/issues"
+    },
+    "homepage": "https://github.com/LukasWass/blueprint-npmjs#readme",
+    "devDependencies": {
+        "typescript": "^4.5.2"
+    }
+}
