@@ -4,16 +4,21 @@
     "description": "Blueprint for npmjs package",
     "main": "./lib/index.js",
     "types": "./lib",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LukasWass/blueprint-npmjs/issues"
+    },
+    "homepage": "https://github.com/LukasWass/blueprint-npmjs#readme",
+    "keywords": [],
     "scripts": {
         "build": "tsc",
-        "test": "npm run build && echo \"Error: no test specified\" && exit 1",
+        "test": "jest",
         "publish": "npm publish"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/LukasWass/blueprint-npmjs.git"
     },
-    "keywords": [],
     "authors": [
         {
             "name": "Lukas Wass",
@@ -26,12 +31,21 @@
             "url": "https://axtelius.se"
         }
     ],
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/LukasWass/blueprint-npmjs/issues"
-    },
-    "homepage": "https://github.com/LukasWass/blueprint-npmjs#readme",
+    "dependencies": {},
     "devDependencies": {
+        "@types/jest": "^27.0.3",
+        "jest": "^27.4.2",
+        "ts-jest": "^27.0.7",
         "typescript": "^4.5.2"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "transform": {
+            "node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+        },
+        "transformIgnorePatterns": [
+            "node_modules/(?!variables/.*)"
+        ]
     }
 }
