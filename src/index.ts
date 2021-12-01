@@ -1,5 +1,5 @@
 const index = () => {
-    console.log("Blueprint for npmjs package");
-}
+  return "Hello world!";
+};
 
 export default index;
